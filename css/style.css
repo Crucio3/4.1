@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "TT Lakes";
+  width: 320px;
+  position: fixed;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-menu__content {
+  padding-top: 18px;
+  box-shadow: 20px 0 52px 0px #0e185033;
+  height: 100vh;
+  overflow: auto;
+  padding-right: 24px;
+  padding-left: 24px;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0px 0px;
+}
+
+.button {
+  display: flex;
+}
+
+.header__burger {
+  margin-right: 16px;
+}
+
+.header__group {
+  margin-right: 78px;
+}
+
+.mobile-menu__main {
+  padding-top: 46px;
+}
+
+.mobile-menu__flex {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: space-between;
+  gap: 50px;
+}
+.list {
+  list-style-type: none;
+}
+
+.list__item {
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+  height: 32px;
+
+  font-weight: 500;
+  transition-duration: 1s;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.radio-button:checked + .list__item {
+  opacity: 0.5;
+  transition-duration: 1s;
+}
+
+.list__item::before {
+  content: "";
+  border-right: 4px solid;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-color: #41f6d7;
+
+  opacity: 0;
+  transition-duration: 200ms;
+  position: absolute;
+  left: 0;
+}
+
+.radio-button:checked + .list__item:before {
+  opacity: 1;
+  transition-duration: 1s;
+  height: 32px;
+}
+
+.footer__icons {
+  display: flex;
+  gap: 16px;
+  padding-bottom: 16px;
+}
+
+.footer__position-mail {
+  padding-bottom: 12px;
+}
+
+.footer__mail {
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+
+.footer__position-number {
+  padding-bottom: 40px;
+}
+
+.footer__phone-number {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  font-weight: 800;
+  color: black;
+  text-decoration: none;
+}
+
+.footer__lang-change {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 34px;
+}
+
+.footer__lang {
+  transition-duration: 0.8s;
+}
+
+.radio-button:checked + .footer__lang {
+  opacity: 0.5;
+  transition-duration: 0.8s;
+}
+
+.radio-button {
+  display: none;
+}
